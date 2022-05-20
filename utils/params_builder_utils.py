@@ -91,6 +91,6 @@ def get_days_input(empty_legal = False):
     value = days_assert(value)
   return value
 
-def write_params(param_path, params):
-  with open(param_path, "w") as f:
+def write_params(params_path, params):
+  with open(params_path, "w") as f:
     json.dump(params, f, indent=4)
