@@ -13,7 +13,7 @@ import argparse
 def read_args():
   parser = argparse.ArgumentParser()
   parser.add_argument('-f', type=str, help='name for input param json and output csv', required=True)
-  parser.add_argument('-b', type=int, help='number of parallel requests', required=True)
+  parser.add_argument('-b', type=int, help='query batch size', default=5)
   parser.add_argument('-n', action='store_true', default=False, help='specify to overwrite old params json')
   args = parser.parse_args()
 
